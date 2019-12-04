@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "strictNullChecks": true,
+        "module": "commonjs",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "target": "es6",
+        "lib": [
+            "dom", // without dom, handle electron will give error: ERROR in [at-loader] ./node_modules/electron/electron.d.ts
+            "es2015"
+        ]
+    },
+    "include": [
+        "src" // write ts in src, you can define your own dir
+    ]
+}
