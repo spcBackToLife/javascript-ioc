@@ -1,13 +1,25 @@
 ## javascript ioc详解教程
-核心流程是使用装饰器，来实现依赖关系的维护。
-
-## 编写装饰器工厂
-1. 装饰器本身是一个函数，在这里有如下几个作用：
-  - 维护依赖关系（storeServiceDependency）
-  - 唯一标识服务（toString）
-  - type字段的类型 则为此服务类型
+核心流程是使用装饰器，来实现依赖关系的维护。本项目就是javascript实现的一个(控制反转IOC、依赖注入DI)demo。
 
 
+## 目录结构
+-- ioc 
+
+  -- common 辅助工具类（可直接复制哈，感兴趣可以看实现）
+    -- async.ts idle-until-urget 思想的实现方式。（使用延迟加载优化性能）
+    -- collections.ts 集合操作工具类
+    -- type.ts 类型工具类
+
+  -- instantiation ioc核心代码
+    -- descriptors.ts 装饰器，装饰需要实例化的类，增加一些属性，比如是否支持延时加载
+    -- graph.ts 实例化时，处理依赖关系和循环依赖的有向图，
+    -- instatiation.ts 一些结构和辅助方法的定义
+    -- instantiationService.ts 实例化服务
+    -- serviceCollection.ts 实例存储池子
+  
+  -- services 服务demo
+    --common 服务接口
+    ... 其余服务
 
 
 
