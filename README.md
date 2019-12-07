@@ -1,4 +1,15 @@
 ## javascript ioc详解教程
+核心流程是使用装饰器，来实现依赖关系的维护。
+
+## 编写装饰器工厂
+1. 装饰器本身是一个函数，在这里有如下几个作用：
+  - 维护依赖关系（storeServiceDependency）
+  - 唯一标识服务（toString）
+  - type字段的类型 则为此服务类型
+
+
+
+
 
 
 ## 控制反转IoC（Inversion of Control）

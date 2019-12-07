@@ -71,7 +71,9 @@ export class IdleValue<T> {
 				this._didRun = true;
 			}
 		};
-		this._handle = runWhenIdle(() => this._executor());
+		this._handle = runWhenIdle((tt) => {
+			return this._executor();
+		});
 	}
 
 	dispose(): void {

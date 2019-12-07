@@ -17,6 +17,8 @@ export class Graph<T> {
   constructor(private _hashFn: (element: T) => string) {}
   roots(): Node<T>[] {
     const ret: Node<T>[] = [];
+    // 此处root表示，被依赖的节点，此节点不依赖与其他模块，所以没有outgoing只向。只有incoming指向。
+    // 此种节点可有多个
     forEach(this._nodes, entry => {
       if (isEmptyObject(entry.value.outgoing)) {
         ret.push(entry.value);

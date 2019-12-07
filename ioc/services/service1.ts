@@ -1,4 +1,4 @@
-import { Service6 } from './Service6';
+// import { Service6 } from './Service6';
 // import { Service3 } from './service3';
 import { Iservice1 } from './common/Iservice1';
 import { Iservice6 } from './common/Iservice6';

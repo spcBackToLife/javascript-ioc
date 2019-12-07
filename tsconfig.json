@@ -15,6 +15,6 @@
         ]
     },
     "include": [
-        "src" // write ts in src, you can define your own dir
+        "ioc" // write ts in src, you can define your own dir
     ]
 }
