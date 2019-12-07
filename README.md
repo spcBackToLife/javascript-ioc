@@ -6,19 +6,29 @@
 -- ioc 
 
   -- common 辅助工具类（可直接复制哈，感兴趣可以看实现）
+
     -- async.ts idle-until-urget 思想的实现方式。（使用延迟加载优化性能）
+
     -- collections.ts 集合操作工具类
+
     -- type.ts 类型工具类
 
   -- instantiation ioc核心代码
+
     -- descriptors.ts 装饰器，装饰需要实例化的类，增加一些属性，比如是否支持延时加载
-    -- graph.ts 实例化时，处理依赖关系和循环依赖的有向图，
+
+    -- graph.ts 实例化时，处理依赖关系和循环依赖的有向图
+
     -- instatiation.ts 一些结构和辅助方法的定义
+
     -- instantiationService.ts 实例化服务
+
     -- serviceCollection.ts 实例存储池子
   
   -- services 服务demo
+
     --common 服务接口
+    
     ... 其余服务
 
 
