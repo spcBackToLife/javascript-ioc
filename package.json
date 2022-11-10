@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.5.5",
-    "electron": "6.0.9"
+    "electron": "18.3.7"
   }
 }
